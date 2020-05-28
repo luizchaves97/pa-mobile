@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: ['react', 'prettier', 'react-hooks'],
   rules: {
+    camelcase: 'off',
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
@@ -28,5 +29,12 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
+  },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
+      },
+    },
   },
 };

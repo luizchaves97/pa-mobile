@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Text } from 'react-native';
 
 import { MainContainer } from './style';
-import api from '../../services/api';
+import api from '~/services/api';
 
 const Main = () => {
   const [helloText, setHelloText] = useState('');

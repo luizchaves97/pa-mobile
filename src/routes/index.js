@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import MainScreen from '../pages/Main';
-import UserScreen from '../pages/User';
+import MainScreen from '~/pages/Main';
+import UserScreen from '~/pages/User';
 
 const Routes = () => {
   const RouterStack = createStackNavigator();
